@@ -9,12 +9,16 @@
       </swiper>
     </div>
     <div class="somecontent">
+<<<<<<< HEAD
       <div class="my-head shake-slow shake-constant shake-constant--hover">
         <img src="../assets/headimg.jpg">
         <h5>NoProperName</h5>
         <h6><span>OYJH</span> 's resume</h6>
         <p>QQ:1019825864</p>
       </div>
+=======
+      <div class="my-head"></div>
+>>>>>>> 2d7673e754ae88b2a05d3e33fe0f64094c6e26a9
       <div class="mid-content">
         <div class="container">
           <div class="row">
@@ -92,13 +96,18 @@ export default {
 }
 .my-head {
   position: relative;
+<<<<<<< HEAD
   width: 230px;
+=======
+  width: 200px;
+>>>>>>> 2d7673e754ae88b2a05d3e33fe0f64094c6e26a9
   height: 70px;
   background-color: rgba(155, 155, 155, 0.5);
   top: 5%;
   left: 2%;
   border-radius: 15px;
 }
+<<<<<<< HEAD
 .my-head img {
   position: relative;
   width: 50px;
@@ -122,6 +131,8 @@ export default {
   background-color: black;
   color: white;
 }
+=======
+>>>>>>> 2d7673e754ae88b2a05d3e33fe0f64094c6e26a9
 .mid-content {
   position: relative;
   top: 25%;
@@ -130,7 +141,11 @@ export default {
   border: none;
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0);
+<<<<<<< HEAD
   color: rgb(133, 133, 133);
+=======
+  color: rgb(173, 173, 173);
+>>>>>>> 2d7673e754ae88b2a05d3e33fe0f64094c6e26a9
 }
 .card:hover {
   box-shadow: 8px 12px 50px rgba(0, 0, 0, 0.842);
