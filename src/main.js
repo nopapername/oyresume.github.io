@@ -4,11 +4,18 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
+import $ from 'jquery'
 
 // require styles
 import 'swiper/dist/css/swiper.css'
+import 'popper.js/dist/umd/popper.min.js'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.min.js'
+import animated from 'animate.css'
+import 'csshake/dist/csshake.css'
 
-Vue.use(VueAwesomeSwiper/* { default global options } */)
+Vue.use(animated)
+Vue.use(VueAwesomeSwiper)
 
 Vue.config.productionTip = false
 

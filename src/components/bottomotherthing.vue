@@ -1,5 +1,15 @@
 <template>
-  <div>
+  <div class="content">
+    我是页面6
+    我是页面6
+    我是页面6
+    我是页面6
+    我是页面6
+    我是页面6
+    我是页面6
+    我是页面6
+    我是页面6
+    我是页面6
     我是页面6
   </div>
 </template>
@@ -8,5 +18,9 @@ export default {
 }
 </script>
 <style scoped>
-
+.content {
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+}
 </style>
