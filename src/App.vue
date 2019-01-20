@@ -13,6 +13,17 @@ export default {
       myHeight: document.documentElement.clientHeight + 'px'
     }
   },
+  created () {
+    try {
+      var loading = document.getElementById('loading')
+      console.log(loading)
+      if (loading != null) {
+        document.body.removeChild(loading)
+      }
+    } catch (e) {
+
+    }
+  },
   mounted () {
     // 动态设置背景图的高度为浏览器可视区域高度
 
