@@ -9,6 +9,7 @@
       </swiper>
     </div>
     <div class="somecontent">
+      <div class="my-head"></div>
       <div class="mid-content">
         <div class="container">
           <div class="row">
@@ -84,9 +85,18 @@ export default {
   width: 100%;
   height: 100%;
 }
+.my-head {
+  position: relative;
+  width: 200px;
+  height: 70px;
+  background-color: rgba(155, 155, 155, 0.5);
+  top: 5%;
+  left: 2%;
+  border-radius: 15px;
+}
 .mid-content {
   position: relative;
-  top: 30%;
+  top: 25%;
 }
 .card {
   border: none;
