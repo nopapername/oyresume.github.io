@@ -16,7 +16,6 @@ export default {
   created () {
     try {
       var loading = document.getElementById('loading')
-      console.log(loading)
       if (loading != null) {
         document.body.removeChild(loading)
       }

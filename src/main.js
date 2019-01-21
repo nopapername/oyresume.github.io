@@ -5,6 +5,7 @@ import App from './App'
 import router from './router'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import $ from 'jquery'
+import VueParticles from 'vue-particles'
 
 // require styles
 import 'swiper/dist/css/swiper.css'
@@ -16,6 +17,7 @@ import 'csshake/dist/csshake.css'
 
 Vue.use(animated)
 Vue.use(VueAwesomeSwiper)
+Vue.use(VueParticles)
 
 Vue.config.productionTip = false
 

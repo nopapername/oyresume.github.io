@@ -20,9 +20,29 @@
           <div class="row">
             <div class="col-8 offset-2">
               <div class="card" @mouseenter="addcardAnimate"  @mouseleave="delcardAnimate" :class="cardani">
+                <div class="particles">
+                  <vue-particles
+                    color="#7DF031"
+                    :particleOpacity="0.5"
+                    linesColor="#D5D5D5"
+                    :particlesNumber="80"
+                    shapeType="circle"
+                    :particleSize="5"
+                    :linesWidth="2"
+                    :lineLinked="true"
+                    :lineOpacity="0.4"
+                    :linesDistance="2"
+                    :moveSpeed="3"
+                    :hoverEffect="true"
+                    hoverMode="grab"
+                    :clickEffect="true"
+                    clickMode="push"
+                  >
+                  </vue-particles>
+                </div>
                 <div class="card-body text-center animated flip">
-                  <h1 class="card-title display-4">Welcome,This is my resume</h1>
-                  <h3 class="card-text">Take a little time,take to know me</h3>
+                  <h1 class="card-title display-5" style="font-family: Jokerman">Welcome,This is my resume</h1>
+                  <h3 class="card-text" style="font-family: Bradley Hand ITC">Take a little time,take to know me</h3>
                   <p>我叫 欧阳佳豪</p>
                   <p>正致力于成为一名合格的前端工程师</p>
                   <p>1019825864@qq.com</p>
@@ -74,6 +94,13 @@ export default {
   width: 100%;
   height: 100%;
   overflow: hidden;
+}
+.particles {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
 .swiper-slide img {
   width: 100%;
@@ -130,7 +157,7 @@ export default {
   border: none;
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0);
-  color: rgb(133, 133, 133);
+  color: rgb(187, 187, 187);
 }
 .card:hover {
   box-shadow: 8px 12px 50px rgba(0, 0, 0, 0.842);
@@ -138,5 +165,6 @@ export default {
 .card p{
   color: rgb(255, 255, 255);
   font-size: 25px;
+  font-family: 'STKaiti','Courier New', Courier, monospace
 }
 </style>
