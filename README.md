@@ -2,6 +2,34 @@
 
 > A Vue.js project
 
+### 个人简历网站
+
+本小弟练习写的基于Vue个人简历项目，和我一样初学Vue的可以在本项目中学习了解以下的框架/库，同时还可以了解关于vue代码结构组织，模块化，前端构建等内容，入门vue的好选择。
+
+### 技术栈
+
+前端 es6 vue2 webpack vue-cli vue-router vue-awesome-swiper vue-particles bootstrap csshake animate.css
+
+### 起手式
+
+star and fork本项目
+
+安装node
+
+git clone ...
+
+cd vue-resume
+
+npm install （建议使用淘宝镜像cnpm）
+
+npm run dev
+
+浏览器打开 http://localhost:1008
+
+### 交流
+
+有任何问题可以在这里提issue，欢迎各位star小弟的--！
+
 ## Build Setup
 
 ``` bash
