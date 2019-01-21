@@ -12,10 +12,7 @@ import 'popper.js/dist/umd/popper.min.js'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.min.js'
 import animated from 'animate.css'
-<<<<<<< HEAD
 import 'csshake/dist/csshake.css'
-=======
->>>>>>> 2d7673e754ae88b2a05d3e33fe0f64094c6e26a9
 
 Vue.use(animated)
 Vue.use(VueAwesomeSwiper)
