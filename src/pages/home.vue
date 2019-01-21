@@ -1,6 +1,12 @@
 <template>
   <div>
     <div class="d-none d-md-block">
+      <div class="my-head shake-slow shake-constant shake-constant--hover">
+        <img src="../assets/headimg.jpg">
+        <h5>NoProperName</h5>
+        <h6><span>OYJH</span> 's resume</h6>
+        <p>QQ:1019825864</p>
+      </div>
       <swiper :options="swiperOption" ref="mySwiper" :style="{height:myHeight}">
         <swiper-slide><topmain></topmain></swiper-slide>
         <swiper-slide><introduce></introduce></swiper-slide>
@@ -60,6 +66,39 @@ export default {
   padding: 0;
   margin: 0;
 }
+.my-head {
+  position: absolute;
+  width: 230px;
+  height: 70px;
+  background-color: rgba(155, 155, 155, 0.5);
+  top: 5%;
+  left: 2%;
+  border-radius: 15px;
+  z-index: 3;
+}
+.my-head img {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 10px;
+}
+.my-head h5 {
+  position: absolute;
+  top: 12px;
+  left: 70px;
+}
+.my-head h6 {
+  position: absolute;
+  top: 42px;
+  left: 80px;
+}
+.my-head span {
+  padding: 0 8px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+}
 .swiper-container,.swiper-wrapper {
   width: 100%;
   height: 100%;
@@ -69,6 +108,10 @@ export default {
   width: 17px;
   height: 17px;
   border: 4px solid rgb(212, 212, 212);
+}
+.swiper-pagination-bullet:hover {
+  border: 1px solid rgb(159, 165, 255);
+  box-shadow: 0 0 8px rgb(0, 17, 255);
 }
 .swiper-pagination-bullet-active {
   content: '';

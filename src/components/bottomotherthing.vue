@@ -1,16 +1,5 @@
 <template>
-  <div class="content">
-    我是页面6
-    我是页面6
-    我是页面6
-    我是页面6
-    我是页面6
-    我是页面6
-    我是页面6
-    我是页面6
-    我是页面6
-    我是页面6
-    我是页面6
+  <div class="bottomcontent">
   </div>
 </template>
 <script>
@@ -18,9 +7,13 @@ export default {
 }
 </script>
 <style scoped>
-.content {
+.bottomcontent {
   width: 100%;
   height: 100%;
-  background-color: blue;
+  display: block;
+  background: url('../assets/bg5.jpg');
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
 }
 </style>

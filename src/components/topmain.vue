@@ -9,12 +9,6 @@
       </swiper>
     </div>
     <div class="somecontent">
-      <div class="my-head shake-slow shake-constant shake-constant--hover">
-        <img src="../assets/headimg.jpg">
-        <h5>NoProperName</h5>
-        <h6><span>OYJH</span> 's resume</h6>
-        <p>QQ:1019825864</p>
-      </div>
       <div class="mid-content">
         <div class="container">
           <div class="row">
@@ -116,38 +110,6 @@ export default {
   z-index: 0;
   width: 100%;
   height: 100%;
-}
-.my-head {
-  position: relative;
-  width: 230px;
-  height: 70px;
-  background-color: rgba(155, 155, 155, 0.5);
-  top: 5%;
-  left: 2%;
-  border-radius: 15px;
-}
-.my-head img {
-  position: relative;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin: 10px;
-}
-.my-head h5 {
-  position: absolute;
-  top: 12px;
-  left: 70px;
-}
-.my-head h6 {
-  position: absolute;
-  top: 42px;
-  left: 80px;
-}
-.my-head span {
-  padding: 0 8px;
-  border-radius: 5px;
-  background-color: black;
-  color: white;
 }
 .mid-content {
   position: relative;
