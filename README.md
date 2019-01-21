@@ -24,7 +24,7 @@ npm install （建议使用淘宝镜像cnpm）
 
 npm run dev
 
-浏览器打开 http://localhost:1008
+浏览器打开 http://localhost:8080
 
 ### 交流
 
