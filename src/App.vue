@@ -3,7 +3,6 @@
     <router-view :myHeight="myHeight"></router-view>
   </div>
 </template>
-
 <script>
 export default {
   name: 'App',
@@ -15,10 +14,12 @@ export default {
   },
   created () {
     try {
-      var loading = document.getElementById('loading')
-      if (loading != null) {
-        document.body.removeChild(loading)
-      }
+      setTimeout(function () {
+        var loading = document.getElementById('loading')
+        if (loading != null) {
+          document.body.removeChild(loading)
+        }
+      }, 5000)
     } catch (e) {
 
     }

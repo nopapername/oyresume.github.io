@@ -45,7 +45,8 @@ export default {
         direction: 'vertical',
         autoHeight: true,
         mousewheel: true,
-        setWrapperSize: true
+        setWrapperSize: true,
+        threshold: 5
       }
     }
   },
@@ -75,6 +76,7 @@ export default {
   left: 2%;
   border-radius: 15px;
   z-index: 3;
+  cursor: pointer;
 }
 .my-head img {
   position: relative;
@@ -92,12 +94,16 @@ export default {
   position: absolute;
   top: 42px;
   left: 80px;
+  color: black;
 }
 .my-head span {
   padding: 0 8px;
   border-radius: 5px;
   background-color: black;
   color: white;
+}
+.my-head:hover {
+  color: #964300;
 }
 .swiper-container,.swiper-wrapper {
   width: 100%;

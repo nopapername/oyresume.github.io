@@ -41,7 +41,7 @@ export default {
   z-index: -1;
 }
 .midcontent {
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 100%;
   top: 15%;
