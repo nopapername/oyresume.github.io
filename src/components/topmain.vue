@@ -56,7 +56,7 @@ export default {
   data () {
     return {
       swiperOption: {
-        speed: 1000,
+        speed: 2000,
         setWrapperSize: true,
         effect: 'flip', // 切换效果
         loop: true, // 环路

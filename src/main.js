@@ -14,6 +14,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.min.js'
 import animated from 'animate.css'
 import 'csshake/dist/csshake.css'
+import '@/assets/iconfont/iconfont.css'
 
 Vue.use(animated)
 Vue.use(VueAwesomeSwiper)

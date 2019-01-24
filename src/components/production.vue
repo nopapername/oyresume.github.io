@@ -5,9 +5,9 @@
         <h3>This is picture exhibiton</h3>
       </div>
       <swiper :options="swiperOption">
-        <swiper-slide><img src="../assets/pro1.png"></swiper-slide>
-        <swiper-slide><img src="../assets/pro2.png"></swiper-slide>
-        <swiper-slide><img src="../assets/pro3.png"></swiper-slide>
+        <swiper-slide class="text-center"><img src="../assets/pro1.png"><span>粗糙的本简历网站</span></swiper-slide>
+        <swiper-slide class="text-center"><img src="../assets/pro2.png"><span>纯div+css仿京东网站练习</span></swiper-slide>
+        <swiper-slide class="text-center"><img src="../assets/pro3.png"><span>粗糙的漫威blog页面设计</span></swiper-slide>
       </swiper>
     </div>
   </div>
@@ -26,7 +26,6 @@ export default {
         },
         speed: 1000,
         loop: true, // 环路
-        autoHeight: true,
         autoplay: {
           delay: 3000, // 4秒切换一次
           disableOnInteraction: false // 触碰后自动切换也不停止
@@ -52,7 +51,7 @@ export default {
   top: 12%;
   left: 30%;
   width: 40%;
-  height: 65%;
+  height: 500px;
 }
 .pro-slider img {
   width: 100%;
@@ -76,5 +75,11 @@ export default {
   left: 30px;
   font-family: 'French Script MT';
   font-size: 50px;
+}
+span {
+  color: rgba(168, 168, 168, 0.692);
+  display: block;
+  margin-top: 20px;
+  font-family: 'STxingkai'
 }
 </style>
