@@ -14,11 +14,11 @@
 
 star and fork本项目
 
-安装node
+安装node环境
 
-git clone ...
+git clone ...(本项目地址)
 
-cd vue-resume
+cd vue-resume (进入本项目路径打开终端)
 
 npm install （建议使用淘宝镜像cnpm）
 

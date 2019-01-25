@@ -18,7 +18,7 @@
       </swiper>
     </div>
     <div class="d-md-none">
-      aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+      小屏幕设备(如手机，平板等等)页面还未完善！！！！！！
     </div>
   </div>
 </template>
