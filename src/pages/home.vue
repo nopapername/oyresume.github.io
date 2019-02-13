@@ -18,7 +18,7 @@
       </swiper>
     </div>
     <div class="d-md-none">
-      小屏幕设备(如手机，平板等等)页面还未完善！！！！！！
+      <phonePage></phonePage>
     </div>
   </div>
 </template>
@@ -31,6 +31,7 @@ import skills from '../components/skills'
 import experience from '../components/experience'
 import production from '../components/production'
 import bottomotherthing from '../components/bottomotherthing'
+import phonePage from '../components/phonePage'
 
 export default {
   name: 'home',
@@ -58,7 +59,8 @@ export default {
     skills,
     experience,
     production,
-    bottomotherthing
+    bottomotherthing,
+    phonePage
   }
 }
 </script>

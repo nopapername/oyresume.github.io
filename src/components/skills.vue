@@ -32,7 +32,7 @@
           <br>
           <h5 class="skillhover shake-little" style="padding-bottom:5px; width: 106px;background-color: #343a40;padding:2px 5px;border-radius:7px;">Vue技术栈</h5>
           <div class="progress">
-            <div class="progress-bar bg-dark progress-bar-striped progress-bar-animated" style="width:60%"></div>
+            <div class="progress-bar bg-dark progress-bar-striped progress-bar-animated" style="width:50%"></div>
           </div>
         </div>
       </div>

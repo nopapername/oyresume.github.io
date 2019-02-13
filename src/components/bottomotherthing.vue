@@ -10,7 +10,7 @@
         <h1 class="myh1 shake-opacity shake-constant"><span style="color: greenyellow">CONTACT</span> ME</h1>
         <div class="line"></div>
         <div class="myconnect">
-          <a href="http://https://github.com/nopapername/vue-resume" target="_blank" class="iconfont" id="github" data-toggle="tooltip" data-placement="bottom" :title="github">&#xe6f6;</a>
+          <a href="http://github.com/nopapername/vue-resume" target="_blank" class="iconfont" id="github" data-toggle="tooltip" data-placement="bottom" :title="github">&#xe6f6;</a>
           <a href="#" class="iconfont" id="weixin" data-toggle="tooltip" data-placement="bottom" :title="weixin" data-html="true">&#xe654;</a>
           <a href="#" class="iconfont" id="qq" data-toggle="tooltip" data-placement="bottom" :title="qq" data-html="true">&#xe66a;</a>
           <a href="https://weibo.com/u/6020961867?topnav=1&wvr=6&topsug=1" target="_blank" class="iconfont" id="weibo" data-toggle="tooltip" data-placement="bottom" :title="weibo">&#xe66b;</a>
@@ -21,14 +21,6 @@
   </div>
 </template>
 <script>
-import $ from 'jquery'
-$(document).ready(function () {
-  $('#github').tooltip()
-  $('#weixin').tooltip()
-  $('#qq').tooltip()
-  $('#weibo').tooltip()
-  $('#csdn').tooltip()
-})
 export default {
   data () {
     return {

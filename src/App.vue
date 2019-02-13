@@ -4,6 +4,19 @@
   </div>
 </template>
 <script>
+import $ from 'jquery'
+$(document).ready(function () {
+  $('#github').tooltip()
+  $('#weixin').tooltip()
+  $('#qq').tooltip()
+  $('#weibo').tooltip()
+  $('#csdn').tooltip()
+  $('#pgithub').tooltip()
+  $('#pweixin').tooltip()
+  $('#pqq').tooltip()
+  $('#pweibo').tooltip()
+  $('#pcsdn').tooltip()
+})
 export default {
   name: 'App',
   data () {
