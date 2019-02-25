@@ -32,8 +32,7 @@ export default {
         autoplay: {
           delay: 3000, // 4秒切换一次
           disableOnInteraction: false // 触碰后自动切换也不停止
-        },
-        autoHeight: true
+        }
       }
     }
   }
@@ -72,6 +71,10 @@ export default {
 .swiperbg {
   height: 65%;
   width: 70%;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
 }
 .swiper-slide img{
   height: 100%;
