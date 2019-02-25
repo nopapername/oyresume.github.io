@@ -8,12 +8,12 @@
         <p>QQ:1019825864</p>
       </div>
       <swiper :options="swiperOption" ref="mySwiper" :style="{height:myHeight}">
-        <swiper-slide><topmain></topmain></swiper-slide>
-        <swiper-slide><introduce></introduce></swiper-slide>
-        <swiper-slide><skills></skills></swiper-slide>
-        <swiper-slide><experience></experience></swiper-slide>
-        <swiper-slide><production></production></swiper-slide>
-        <swiper-slide><bottomotherthing></bottomotherthing></swiper-slide>
+        <swiper-slide><topmain :topHeight="myHeight"></topmain></swiper-slide>
+        <swiper-slide><introduce :introHeight="myHeight"></introduce></swiper-slide>
+        <swiper-slide><skills :skillHeight="myHeight"></skills></swiper-slide>
+        <swiper-slide><experience :expHeight="myHeight"></experience></swiper-slide>
+        <swiper-slide><production :proHeight="myHeight"></production></swiper-slide>
+        <swiper-slide><bottomotherthing :bottHeight="myHeight"></bottomotherthing></swiper-slide>
         <div class="swiper-pagination" slot="pagination"></div>
       </swiper>
     </div>

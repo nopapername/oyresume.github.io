@@ -2,47 +2,41 @@
   <div class="topmaincontent">
     <div class="bg-imgs animated flipInX">
       <swiper :options="swiperOption">
-        <swiper-slide><img src="../assets/1.jpg"></swiper-slide>
-        <swiper-slide><img src="../assets/2.jpg"></swiper-slide>
-        <swiper-slide><img src="../assets/3.jpg"></swiper-slide>
-        <swiper-slide><img src="../assets/4.jpg"></swiper-slide>
+        <swiper-slide><img src="../assets/1.jpg" :style="{height:topHeight}"></swiper-slide>
+        <swiper-slide><img src="../assets/2.jpg" :style="{height:topHeight}"></swiper-slide>
+        <swiper-slide><img src="../assets/3.jpg" :style="{height:topHeight}"></swiper-slide>
+        <swiper-slide><img src="../assets/4.jpg" :style="{height:topHeight}"></swiper-slide>
       </swiper>
     </div>
     <div class="somecontent">
       <div class="mid-content">
-        <div class="container">
-          <div class="row">
-            <div class="col-8 offset-2">
-              <div class="card" @mouseenter="addcardAnimate"  @mouseleave="delcardAnimate" :class="cardani">
-                <div class="particles">
-                  <vue-particles
-                    color="#7DF031"
-                    :particleOpacity="0.5"
-                    linesColor="#D5D5D5"
-                    :particlesNumber="80"
-                    shapeType="circle"
-                    :particleSize="5"
-                    :linesWidth="2"
-                    :lineLinked="true"
-                    :lineOpacity="0.4"
-                    :linesDistance="2"
-                    :moveSpeed="3"
-                    :hoverEffect="true"
-                    hoverMode="grab"
-                    :clickEffect="true"
-                    clickMode="push"
-                  >
-                  </vue-particles>
-                </div>
-                <div class="card-body text-center animated flip">
-                  <h1 class="card-title display-5" style="font-family: Jokerman">Welcome,This is my resume</h1>
-                  <h3 class="card-text" style="font-family: Bradley Hand ITC">Take a little time,take to know me</h3>
-                  <p>我叫 欧阳佳豪</p>
-                  <p>正致力于成为一名合格的前端工程师</p>
-                  <p>1019825864@qq.com</p>
-                </div>
-              </div>
-            </div>
+        <div class="card" @mouseenter="addcardAnimate"  @mouseleave="delcardAnimate" :class="cardani">
+          <div class="particles">
+            <vue-particles
+              color="#7DF031"
+              :particleOpacity="0.5"
+              linesColor="#D5D5D5"
+              :particlesNumber="80"
+              shapeType="circle"
+              :particleSize="5"
+              :linesWidth="2"
+              :lineLinked="true"
+              :lineOpacity="0.4"
+              :linesDistance="2"
+              :moveSpeed="3"
+              :hoverEffect="true"
+              hoverMode="grab"
+              :clickEffect="true"
+              clickMode="push"
+            >
+            </vue-particles>
+          </div>
+          <div class="card-body text-center animated flip">
+            <h1 class="card-title display-5" style="font-family: Jokerman">Welcome,This is my resume</h1>
+            <h3 class="card-text" style="font-family: Bradley Hand ITC">Take a little time,take to know me</h3>
+            <p>我叫 欧阳佳豪</p>
+            <p>正致力于成为一名合格的前端工程师</p>
+            <p>1019825864@qq.com</p>
           </div>
         </div>
       </div>
@@ -53,6 +47,7 @@
 <script>
 export default {
   name: 'topmain',
+  props: ['topHeight'],
   data () {
     return {
       swiperOption: {
@@ -98,7 +93,6 @@ export default {
 }
 .swiper-slide img {
   width: 100%;
-  height: 100%;
 }
 .bg-imgs {
   position: relative;
@@ -110,10 +104,12 @@ export default {
   z-index: 0;
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .mid-content {
-  position: relative;
-  top: 25%;
+  width: 60%;
 }
 .card {
   border: none;

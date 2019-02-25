@@ -1,18 +1,14 @@
 <template>
   <div class="expcontent">
-    <div class="container animated flipInX">
-      <div class="row">
-        <div class="col-12">
-          <div class="midcontent">
-            <div class="exp-container">
-              <span class="myexperience">我的经历</span>
-              <img :src="imgsrc" @mouseenter="changeimg" @mouseleave="recover" :class="inAndOut">
-              <div class="line"></div>
-              <div class="exp-point">
-                <div class="point"></div>
-                <div class="point"></div>
-                <div class="point"></div>
-              </div>
+    <img src="../assets/bg4.jpg" :style="{height:expHeight}">
+    <div class="midcontent">
+      <span class="myexperience">我的经历</span>
+      <div class="exp-container animated flipInX">
+        <div class="line">
+          <img :src="imgsrc" @mouseenter="changeimg" @mouseleave="recover" :class="inAndOut">
+          <div class="exp-point">
+            <div class="point-content">
+              <div class="point"></div>
               <div class="timePoint1">
                 <span>2019年至今</span>
                 <div class="exp-desc">
@@ -21,18 +17,24 @@
                   <h6>具备前端基础技能，掌握vue框架基础，能简单运用webpack，git等工具</h6>
                 </div>
               </div>
-              <div class="timePoint2">
+            </div>
+            <div class="point-content">
+              <div class="point"></div>
+              <div class="timePoint1">
                 <span>20xx年xx月</span>
                 <div class="exp-desc">
-                  <h4>·····</h4>
-                  <p style="color: green;">[························]</p>
-                  <h6>································································································</h6>
+                  <h4>···</h4>
+                  <p style="color: green;">[········]</p>
+                  <h6>······················</h6>
                 </div>
               </div>
-              <div class="timePoint3">
+            </div>
+            <div class="point-content">
+              <div class="point"></div>
+              <div class="timePoint1">
                 <span>2016年9月</span>
                 <div class="exp-desc">
-                  <h4>就读于 四川师范大学计算机科学与技术专业</h4>
+                  <h4>就读于四川师范大学计算机科学与技术专业</h4>
                   <p style="color: green;">[本科：目前大三在读]</p>
                   <h6>学校里表现普普通通，一名老实的大学生，没获得过啥证书，也没啥值得炫耀的奖项，前端是我的兴趣，自学能力中等偏上！</h6>
                 </div>
@@ -46,6 +48,8 @@
 </template>
 <script>
 export default {
+  name: 'experience',
+  props: ['expHeight'],
   data () {
     return {
       imgsrc: './static/img/zhijingfont.jpg',
@@ -72,36 +76,38 @@ export default {
 </script>
 <style scoped>
 .expcontent {
-  width: 100%;
-  height: 100%;
-  display: block;
-  background: url('../assets/bg4.jpg');
-  background-size: 100%;
+  margin: 0;
+  padding: 0;
   width: 100%;
   height: 100%;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.expcontent img {
+  width: 100%;
+  position: absolute;
+}
+.myexperience {
+  position: relative;
+  top: -50px;
+  color: aliceblue;
+  font-size: 30px;
+  background-color: rgba(129, 129, 129, 0.5);
+  cursor: pointer;
 }
 .midcontent {
-  position: relative;
-  top: 5%;
-  width: 100%;
+  width: 70%;
+  height: 70%;
+  text-align: center;
 }
 .exp-container {
   position: relative;
-  left: 30%;
-}
-.myexperience {
-  position: absolute;
-  left: -200px;
-  color: aliceblue;
-  font-size: 30px;
-  background-color: rgba(255, 68, 0, 0.5);
-  cursor: pointer;
-}
-.exp-container img {
-  position: relative;
-  border-radius: 50%;
-  border: 10px solid rgba(148, 75, 23, 0.5);
+  top: -50px;
+  width: 100%;
+  height: 100%;
+  text-align: initial;
 }
 .inRotate {
   box-shadow: 0 0 32px rgb(128, 128, 128);
@@ -129,25 +135,39 @@ export default {
 }
 .line {
   position: relative;
-  left: 60px;
+  top: 20%;
+  left: 26%;
   width: 10px;
-  height: 600px;
-  background-color: rgba(148, 75, 23, 0.5);
+  height: 80%;
+  background-color: rgba(104, 104, 104, 0.699);
+}
+.line img {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  top: -120px;
+  left: -55px;
+  border-radius: 50%;
+  border: 10px solid rgba(129, 129, 129, 0.5);
 }
 .exp-point {
-  position: relative;
-  top: -550px;
-  left: 48px;
+  position: absolute;
+  top: 10%;
+  left: -12px;
   width: 35px;
-  height: 500px;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+.point-content {
+  position: relative;
+}
 .point {
+  margin: 0 auto;
   width: 25px;
   height: 25px;
-  background-color: rgb(155, 88, 40);
+  background-color: rgb(180, 180, 180);
   border-radius: 50%;
   cursor: pointer;
 }
@@ -158,34 +178,16 @@ export default {
 }
 .timePoint1 {
   position: relative;
-  top: -1040px;
-  left: -110px;
+  top: -15px;
+  left: -130px;
   width: 150px;
   height: 5px;
   border-radius: 5px;
-  background-color: brown;
-}
-.timePoint2 {
-  position: relative;
-  top: -877px;
-  left: -110px;
-  width: 150px;
-  height: 5px;
-  border-radius: 5px;
-  background-color: brown;
-}
-.timePoint3 {
-  position: relative;
-  top: -715px;
-  left: -110px;
-  width: 150px;
-  height: 5px;
-  border-radius: 5px;
-  background-color: brown;
+  background-color: rgba(165, 42, 42, 0.479);
 }
 span {
-  position: relative;
-  top: 15px;
+  margin-top: 10px;
+  position: absolute;
   padding: 10px;
   font-family: '华文琥珀';
   font-size: 20px;
@@ -193,15 +195,33 @@ span {
   border-radius: 10px;
 }
 .exp-desc {
-  width: 600px;
+  font-family: '隶书';
+  position:relative;
+  top: -40px;
+  left: 250px;
+  width: 550px;
   color: rgb(212, 212, 212);
-  position: relative;
-  left: 230px;
-  top: -50px;
+  position: absolute;
   cursor: pointer;
+  overflow: hidden;
+  margin-top: 20px;
 }
 .exp-desc:hover {
   color: greenyellow;
   transition: all 1s;
+}
+.exp-desc h4 {
+  padding: 0;
+  margin: 0;
+}
+.exp-desc p {
+  padding: 0;
+  margin: 0;
+  width: 80%;
+}
+.exp-desc h6 {
+  padding: 0;
+  margin: 0;
+  width: 80%;
 }
 </style>

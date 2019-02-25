@@ -1,5 +1,6 @@
 <template>
   <div class="bottomcontent">
+    <img src="../assets/bg5.jpg" :style="{height:bottHeight}">
     <div class="midcontent animated flipInX">
       <div class="mytopborder"></div>
       <div class="mybottomborder"></div>
@@ -22,6 +23,8 @@
 </template>
 <script>
 export default {
+  name: 'bottomotherthing',
+  props: ['bottHeight'],
   data () {
     return {
       github: 'Github',
@@ -37,18 +40,17 @@ export default {
 .bottomcontent {
   width: 100%;
   height: 100%;
-  display: block;
-  background: url('../assets/bg5.jpg');
-  background-size: 100%;
-  width: 100%;
-  height: 100%;
   overflow: hidden;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+.bottomcontent img {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
 }
 .midcontent {
-  position: relative;
-  top: 25%;
   width: 480px;
   height: 380px;
 }

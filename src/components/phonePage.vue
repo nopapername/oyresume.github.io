@@ -73,11 +73,11 @@
         <div class="exper">
           <div>
             <p><i class="circle"></i><span class="time">2019年至今</span></p>
-            <p class="expcontent">目前正在找实习<br><span style="font-size: 12px;color:green;">[进阶初级前端工程师]</span><br>具备前端基础技能，掌握vue框架基础，能简单运用webpack，git等工具</p>
+            <p class="pexpcontent">目前正在找实习<br><span style="font-size: 12px;color:green;">[进阶初级前端工程师]</span><br>具备前端基础技能，掌握vue框架基础，能简单运用webpack，git等工具</p>
           </div>
           <div>
             <p><i class="circle"></i><span class="time">2016年9月</span></p>
-            <p class="expcontent">就读于 四川师范大学计算机科学与技术专业<br><span style="font-size: 12px;color:green;">[本科:目前大三在读]</span><br>学校里表现普普通通，一名老实的大学生，没获得过啥证书，也没啥值得炫耀的奖项，前端是我的兴趣，自学能力中等偏上！</p>
+            <p class="pexpcontent">就读于 四川师范大学计算机科学与技术专业<br><span style="font-size: 12px;color:green;">[本科:目前大三在读]</span><br>学校里表现普普通通，一名老实的大学生，没获得过啥证书，也没啥值得炫耀的奖项，前端是我的兴趣，自学能力中等偏上！</p>
           </div>
         </div>
       </div>
@@ -237,7 +237,7 @@ body {
   background-color: rgb(255, 0, 98);
   border-radius: 5px;
 }
-.expcontent {
+.pexpcontent {
   position: relative;
   left: 13px;
   border-left: 2px solid rgb(0, 207, 52);
