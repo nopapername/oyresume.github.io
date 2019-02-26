@@ -123,6 +123,6 @@ export default {
 .card p{
   color: rgb(255, 255, 255);
   font-size: 25px;
-  font-family: 'STKaiti','Courier New', Courier, monospace
+  font-family: 'STKaiti','Courier New', Courier, monospace;
 }
 </style>

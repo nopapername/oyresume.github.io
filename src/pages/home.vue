@@ -1,12 +1,13 @@
 <template>
   <div>
     <div class="d-none d-md-block">
-      <div class="my-head shake-slow shake-constant shake-constant--hover">
+      <a class="my-head shake-slow shake-constant shake-constant--hover" href="https://nopapername.github.io/">
         <img src="../assets/headimg.jpg">
         <h5>NoProperName</h5>
         <h6><span>OYJH</span> 's resume</h6>
         <p>QQ:1019825864</p>
-      </div>
+        <a href="https://nopapername.github.io/" class="myBlog">进入我的博客</a>
+      </a>
       <swiper :options="swiperOption" ref="mySwiper" :style="{height:myHeight}">
         <swiper-slide><topmain :topHeight="myHeight"></topmain></swiper-slide>
         <swiper-slide><introduce :introHeight="myHeight"></introduce></swiper-slide>
@@ -70,6 +71,7 @@ export default {
   margin: 0;
 }
 .my-head {
+  display: block;
   position: absolute;
   width: 230px;
   height: 70px;
@@ -79,6 +81,12 @@ export default {
   border-radius: 15px;
   z-index: 3;
   cursor: pointer;
+  color: black;
+  text-decoration: none;
+}
+.my-head:hover {
+  color: black;
+  text-decoration: none;
 }
 .my-head img {
   position: relative;
@@ -104,8 +112,9 @@ export default {
   background-color: black;
   color: white;
 }
-.my-head:hover {
-  color: #964300;
+.my-head p {
+  padding: 0;
+  margin: 0;
 }
 .swiper-container,.swiper-wrapper {
   width: 100%;
@@ -143,5 +152,20 @@ export default {
   100% {
     opacity: 1;
   }
+}
+.myBlog {
+  padding: 0 8px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+.myBlog:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 3px 10px;
+  transition: all 0.5s;
 }
 </style>
