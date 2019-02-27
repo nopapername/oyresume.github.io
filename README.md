@@ -3,7 +3,8 @@
 > A Vue.js project
 
 ### 网站预览 
-oyjhblog.com
+
+http://www.oyjhblog.com/#/
 
 ### 个人简历网站
 
